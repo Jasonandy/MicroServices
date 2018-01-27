@@ -15,5 +15,17 @@
     <artifactId>mircoservice-ms</artifactId>
 
 
+    <dependencies>
+        <!-- activemq 引入-->
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-all</artifactId>
+            <version>5.15.2</version>
+        </dependency>
+    </dependencies>
+
+
+
+
 
 </project>
