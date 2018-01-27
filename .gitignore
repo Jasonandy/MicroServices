@@ -30,6 +30,6 @@ Thumbs.db
 
 # else
 .springBeans
+
 /.idea/
-microservice-api/src/
-microservice-ms/src/
+
