@@ -1,3 +1,13 @@
+/**
+ * <html>
+ * <body>
+ *  <P> Copyright 1994-2018 JasonInternational</p>
+ *  <p> All rights reserved.</p>
+ *  <p> Created on 2018年</p>
+ *  <p> Created by Jason</p>
+ *  </body>
+ * </html>
+ */
 package cn.ucaner.microservice.ms.activemq.producer;
 
 import org.apache.activemq.ActiveMQConnection;
@@ -6,7 +16,15 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 import javax.jms.*;
 
 /**
- *
+* @Package：cn.ucaner.microservice.ms.activemq.producer   
+* @ClassName：ProducerOne   
+* @Description：   <p> 消息的生产者</p>
+* @Author： - DaoDou   
+* @CreatTime：2018年1月28日 上午10:19:36   
+* @Modify By：   
+* @ModifyTime：  2018年1月28日
+* @Modify marker：   
+* @version    V1.0
  */
 public class ProducerOne {
 
@@ -50,7 +68,7 @@ public class ProducerOne {
     public static void sendMessage(Session session,MessageProducer messageProducer)throws Exception{
         for(int i=0;i<ProducerOne.SENDNUM;i++){
             TextMessage message=session.createTextMessage("ActiveMQ发送消息"+i);
-            System.out.println("收到"+"ActiveMQ ���͵���Ϣ"+i);
+            System.out.println("收到"+"发送的消息"+i);
             messageProducer.send(message);
         }
     }
