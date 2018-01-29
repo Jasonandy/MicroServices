@@ -19,7 +19,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 * @Package：cn.ucaner.microservice.cloud   
 * @ClassName：EurekaApplication   
 * @Description：   <p> EurekaApplication</p>
-* @Author： - DaoDou   
+* @Author： - DaoDou
 * @CreatTime：2018年1月28日 上午10:18:01   
 * @Modify By：   
 * @ModifyTime：  2018年1月28日
@@ -32,4 +32,5 @@ public class EurekaApplication {
   public static void main(String[] args) {
     SpringApplication.run(EurekaApplication.class, args);
   }
+
 }
