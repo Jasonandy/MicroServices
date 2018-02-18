@@ -29,15 +29,28 @@ import javax.jms.*;
 public class ConsumerOne {
 
 
-    private static final String USERNAME= ActiveMQConnection.DEFAULT_USER;
-    private static final String PASSWORD=ActiveMQConnection.DEFAULT_PASSWORD;
+    private static final String USERNAME= ActiveMQConnection.DEFAULT_USER;//默认用户
+    private static final String PASSWORD=ActiveMQConnection.DEFAULT_PASSWORD;//默认密码
     private static final String BROKEURL=ActiveMQConnection.DEFAULT_BROKER_URL;
 
     public static void main(String[] args) {
+    	
+    	/**
+    	 * 连接工厂
+    	 */
         ConnectionFactory connectionFactory;
+        /**
+         * 连接
+         */
         Connection connection = null;
+        /**
+         * 会话
+         */
         Session session;
         Destination destination;
+        /**
+         * 消息消费者
+         */
         MessageConsumer messageConsumer;
 
 

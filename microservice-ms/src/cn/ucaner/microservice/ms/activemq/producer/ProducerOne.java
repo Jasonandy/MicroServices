@@ -49,7 +49,7 @@ public class ProducerOne {
             session=connection.createSession(Boolean.TRUE, Session.AUTO_ACKNOWLEDGE);
             destination=session.createQueue("FirstQueue1");
             messageProducer=session.createProducer(destination);
-            sendMessage(session, messageProducer);
+            sendMessage(session, messageProducer);//发送 消息
             session.commit();
         } catch (Exception e) {
             e.printStackTrace();
